@@ -1,0 +1,616 @@
+@charset "UTF-8";
+/* ================================================
+                    HARU STYLES
+================================================ */
+* {
+  /*outline: 1px solid rgba(0, 255, 0, 0.3)*/ }
+
+/*===== UTILITIES =====*/
+.mb-5 {
+  margin-bottom: 5px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-10 {
+  margin-bottom: 10px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-25 {
+  margin-bottom: 25px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.mb-0 {
+  margin-bottom: 0 !important; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-0 {
+  margin-top: 0 !important; }
+
+.mr-5 {
+  margin-right: 5px !important; }
+
+.mr-10 {
+  margin-right: 10px !important; }
+
+.semi-bold {
+  font-weight: 500 !important; }
+
+.normal-bold {
+  font-weight: 400 !important; }
+
+/* Form Caption */
+form .form-caption {
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  font-size: 16px !important; }
+
+/* Column Gap */
+.two-column {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px; }
+
+/*===== GENERAL =====*/
+body {
+  background: #e4e9f0 !important; }
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto",sans-serif; }
+
+/* Cartillas */
+.mt-element-card
+.mt-card-item
+.mt-card-content
+.mt-card-name {
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+a:hover {
+  text-decoration: none; }
+
+/* Alertas */
+.alert {
+  font-size: 90%; }
+  .alert i.fa {
+    margin-right: 5px; }
+
+/* Notas */
+.note {
+  font-size: 90%; }
+  .note i.fa {
+    margin-right: 5px; }
+  .note p {
+    margin-bottom: 10px; }
+    .note p:last-child {
+      margin-bottom: 0; }
+
+/* Portlet */
+.portlet .portlet-title i {
+  margin-right: 10px !important; }
+
+/* Button ALL SAVE */
+button#all-save {
+  position: fixed;
+  z-index: 10103;
+  top: 80%;
+  right: 10px;
+  /* Como quick sidebar*/
+  padding: 15px;
+  font-size: 13.5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.26); }
+
+/* Accordion Portlet */
+.accordion-portlet .panel.portlet {
+  padding-bottom: 0;
+  margin-bottom: 15px; }
+  .accordion-portlet .panel.portlet .portlet-title {
+    margin-bottom: 0; }
+    .accordion-portlet .panel.portlet .portlet-title .panel-title {
+      font-weight: 500;
+      text-transform: uppercase; }
+    .accordion-portlet .panel.portlet .portlet-title .accordion-toggle {
+      padding-left: 0;
+      position: relative;
+      text-decoration: none !important; }
+      .accordion-portlet .panel.portlet .portlet-title .accordion-toggle::after {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content: "\f077";
+        position: absolute;
+        right: 0;
+        top: 0.5em; }
+      .accordion-portlet .panel.portlet .portlet-title .accordion-toggle.collapsed::after {
+        content: "\f078"; }
+  .accordion-portlet .panel.portlet .portlet-body {
+    padding-top: 18px !important;
+    padding-bottom: 15px !important; }
+
+/* Table Section */
+table.table-section th, table.table-section td {
+  padding: 12px !important; }
+table.table-section th {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important; }
+  table.table-section th i {
+    margin-right: 8px; }
+
+/* Form Actions */
+.form-actions.right a.btn {
+  margin-left: 5px !important; }
+
+/*------------------------------
+      PAGE CONTENT
+------------------------------*/
+.page-content-wrapper .page-content {
+  padding-top: 0; }
+
+/*------------------------------
+      NAVBAR HEADER 
+------------------------------*/
+.page-header.navbar {
+  height: 68px;
+  min-height: 68px;
+  box-shadow: 0 1px 10px 0 rgba(50, 50, 50, 0.2); }
+  .page-header.navbar .page-top {
+    height: 68px; }
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown {
+  height: 68px; }
+  .page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle {
+    color: #aeb2c4 !important;
+    padding: 31px 12px 15px;
+    /* Badgets */ }
+    .page-header.navbar .top-menu .navbar-nav > li.dropdown .dropdown-toggle > .badge {
+      margin-left: 5px; }
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle > .username {
+  color: #aeb2c4 !important;
+  font-weight: 500; }
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle > img {
+  margin-top: -17px; }
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-menu a {
+  color: #888 !important; }
+  .page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-menu a > i {
+    color: #aaa; }
+
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu .dropdown-menu-list .alert {
+  margin-bottom: 0;
+  color: #888; }
+.page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu .dropdown-menu-list .badge {
+  padding: 3px;
+  margin-bottom: 3px;
+  margin-right: 3px; }
+  .page-header.navbar .top-menu .navbar-nav > li.dropdown-extended .dropdown-menu .dropdown-menu-list .badge i {
+    margin-right: 0; }
+
+/* LOGO */
+.page-header.navbar .page-logo {
+  background: #17bab8;
+  height: 68px;
+  width: 235px;
+  margin-left: 20px;
+  padding-left: 0;
+  padding-right: 0; }
+  .page-header.navbar .page-logo > a {
+    color: #fefefe; }
+    .page-header.navbar .page-logo > a:hover, .page-header.navbar .page-logo > a:focus, .page-header.navbar .page-logo > a:visited {
+      color: #fff;
+      text-decoration: none; }
+    @media (max-width: 991px) {
+      .page-header.navbar .page-logo > a {
+        margin-left: 10px; } }
+    @media (max-width: 767px) {
+      .page-header.navbar .page-logo > a {
+        margin-left: 0; } }
+  .page-header.navbar .page-logo h1 {
+    font-weight: 400 !important;
+    margin-top: 15px; }
+
+/* Responsive*/
+@media (max-width: 991px) {
+  .page-header.navbar .page-logo {
+    text-align: center;
+    width: 150px; }
+    .page-header.navbar .page-logo > a {
+      display: inline-block;
+      width: 100%;
+      margin: 0; } }
+/* Search */
+.page-header.navbar .search-form.open {
+  width: 250px !important; }
+
+/*------------------------------
+    SIDEBAR
+------------------------------*/
+/* TOGGLER */
+.page-header.navbar .menu-toggler {
+  background-image: url(../img/sidebar-toggle-light.png); }
+  .page-header.navbar .menu-toggler.sidebar-toggler {
+    float: left;
+    margin: 27px 17px 0 15px; }
+  .page-header.navbar .menu-toggler.responsive-toggler {
+    background-image: url(../img/sidebar-toggle-dark.png);
+    margin: 30.5px 24px 0 16px; }
+
+@media (min-width: 992px) {
+  .page-sidebar-closed.page-sidebar-closed-hide-logo .page-header.navbar .page-logo {
+    width: auto;
+    min-width: 235px; } }
+/* SIDEBAR */
+.page-sidebar.navbar-collapse {
+  min-height: 100vh;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important; }
+
+.page-sidebar .page-sidebar-menu > li > a {
+  padding: 15px; }
+  .page-sidebar .page-sidebar-menu > li > a > i[class^=icon-] {
+    color: #aaa; }
+.page-sidebar .page-sidebar-menu > li:hover > a i, .page-sidebar .page-sidebar-menu > li.active > a i {
+  color: #17bab8 !important; }
+.page-sidebar .page-sidebar-menu > li.open {
+  border-bottom: 1px solid #e5e5e5; }
+
+.page-sidebar .page-sidebar-menu > li:hover > a > i,
+.page-sidebar .page-sidebar-menu > li > a > [class^=icon-],
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > [class^=icon-] {
+  top: 2px;
+  margin-left: 1px;
+  margin-right: 12px; }
+
+.page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li.active > a,
+.page-sidebar .page-sidebar-menu > li.active > a {
+  border-left-color: #17bab8 !important; }
+
+.page-sidebar .page-sidebar-menu .sub-menu li > .sub-menu > li > .sub-menu > li > a {
+  font-size: 13px; }
+
+/** =====================================
+              P├üG. HOME
+===================================== **/
+/* NEXT ATENTION */
+.people-registration .portlet-body {
+  min-height: 100px; }
+.people-registration .mt-card-item {
+  display: block;
+  transition: all 300ms linear; }
+.people-registration .mt-card-content {
+  padding-left: 5px;
+  padding-right: 5px;
+  /* Ellipsis*/
+  white-space: nowrap; }
+.people-registration .mt-card-name, .people-registration .mt-card-desc {
+  text-overflow: ellipsis;
+  overflow: hidden; }
+.people-registration .mt-card-name {
+  color: #333; }
+.people-registration .mt-card-avatar img {
+  display: block;
+  width: 100%;
+  height: auto; }
+.people-registration .mt-card-item {
+  /* Card New Person */
+  /*-----------------*/ }
+  .people-registration .mt-card-item:hover {
+    /*transform: scale(1.05); que da pendiente animar*/ }
+  .people-registration .mt-card-item.new-person {
+    /* Style for largs cards*/ }
+    .people-registration .mt-card-item.new-person .mt-card-avatar {
+      font-size: 160px;
+      color: #fff;
+      position: relative;
+      margin-bottom: 10px; }
+      @media (min-width: 1200px) and (max-width: 1500px) {
+        .people-registration .mt-card-item.new-person .mt-card-avatar {
+          font-size: 100px; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        .people-registration .mt-card-item.new-person .mt-card-avatar {
+          font-size: 220px; } }
+      @media (max-width: 479px) {
+        .people-registration .mt-card-item.new-person .mt-card-avatar {
+          font-size: 90px; } }
+    @media (min-width: 1200px) and (max-width: 1500px) {
+      .people-registration .mt-card-item.new-person.large .mt-card-avatar {
+        font-size: 160px; } }
+    .people-registration .mt-card-item.new-person .icon-user-follow {
+      display: block;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 55%;
+      left: 50%; }
+    .people-registration .mt-card-item.new-person .mt-card-content {
+      height: 51px; }
+    .people-registration .mt-card-item.new-person .mt-card-name {
+      font-size: 12px;
+      line-height: 1.75;
+      color: #fff;
+      margin-bottom: 0; }
+      @media (min-width: 1400px) {
+        .people-registration .mt-card-item.new-person .mt-card-name {
+          font-size: 14px; } }
+
+/* CALENDAR */
+.portlet.light.calendar .fc-button {
+  padding-bottom: 30px;
+  top: -56px; }
+
+/** =====================================
+        P├üG. PEOPLE ATTENDANCE
+===================================== **/
+/* SEARCH FORM */
+.portlet-title .actions .search-form {
+  width: 350px; }
+.portlet-title .actions .form-group.form-md-line-input {
+  margin-bottom: 0;
+  padding-top: 0; }
+
+/** =====================================
+              P├üG. ESTAD├ìSTICA
+===================================== **/
+.statistic-table .table-scrollable {
+  border: none; }
+  .statistic-table .table-scrollable table {
+    max-width: 450px;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+
+#form_statistic .form-actions {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+#form_statistic #reportrange {
+  width: 100%; }
+
+/** =====================================
+            P├üG. EXAMEN MENTAL
+===================================== **/
+.info-patient img {
+  display: block;
+  max-height: 85px;
+  width: auto;
+  float: left;
+  margin-right: 20px; }
+.info-patient .p_data {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .info-patient .p_data h4 {
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .info-patient .p_data p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .info-patient .p_data span {
+    margin: 0 5px; }
+    .info-patient .p_data span:first-child {
+      margin-left: 0; }
+.info-patient a.btn {
+  margin-top: 25px !important; }
+
+section.mental-exam form .note-info i.fa {
+  margin-right: 5px; }
+section.mental-exam form .form-actions.right .btn {
+  margin-left: 5px; }
+section.mental-exam .picture-visomotor img {
+  width: 80%;
+  max-width: 300px; }
+section.mental-exam .portlet-fullscreen img {
+  width: 100%;
+  max-width: 800px; }
+
+section.me-results .table-scrollable {
+  border: none; }
+section.me-results #me-results {
+  border: 1px solid #e7ecf1;
+  max-width: 500px;
+  margin: auto !important; }
+  section.me-results #me-results tr th:nth-child(2),
+  section.me-results #me-results tr th:nth-child(3),
+  section.me-results #me-results tr td:nth-child(2),
+  section.me-results #me-results tr td:nth-child(3) {
+    text-align: center; }
+
+section.me-conclusion .form-actions.right .btn {
+  margin-left: 5px; }
+
+/** =====================================
+          P├üG. HISTORIA CL├ìNICA
+===================================== **/
+section.historia-clinica {
+  /* Formularios */
+  /* Historia personal*/
+  /* Notes editables*/ }
+  section.historia-clinica .portlet > .portlet-title > .tools > a {
+    height: 16px;
+    width: 18px !IMPORTANT;
+    background-size: cover;
+    background-position: center center;
+    margin-left: 25px; }
+  section.historia-clinica .form-group label {
+    margin-bottom: 10px;
+    font-weight: 500; }
+  section.historia-clinica .tabbable-custom > .nav-tabs > li {
+    white-space: nowrap; }
+    section.historia-clinica .tabbable-custom > .nav-tabs > li.active {
+      border-color: #7093cc; }
+      section.historia-clinica .tabbable-custom > .nav-tabs > li.active a {
+        font-weight: 500; }
+    section.historia-clinica .tabbable-custom > .nav-tabs > li a {
+      color: #333;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  section.historia-clinica .note span.for-edit {
+    margin-left: 20px; }
+
+/** =====================================
+          P├üG. FACTOR COGNITIVO
+===================================== **/
+#fx-cognitivo_3 ul li a {
+  color: #333 !important; }
+
+/** =====================================
+        P├üG. RETROALIMENTACI├ôN
+===================================== **/
+.feedback_results {
+  width: 75%;
+  min-width: 220px;
+  max-width: 450px;
+  min-height: 350px;
+  margin: auto;
+  padding: 20px; }
+
+/** =====================================
+        P├üG. INFORME PSICOL├ôGICO
+===================================== **/
+section.informe-psicologico .portlet-body {
+  padding-left: 20px !important;
+  padding-right: 20px !important; }
+section.informe-psicologico ul li {
+  margin-bottom: 10px; }
+section.informe-psicologico #note-1 ul {
+  list-style: none; }
+  section.informe-psicologico #note-1 ul li b {
+    display: inline-block;
+    width: 150px;
+    height: auto; }
+section.informe-psicologico .content-editable {
+  text-align: justify; }
+  section.informe-psicologico .content-editable > * {
+    padding-left: 28px; }
+section.informe-psicologico h3 > small {
+  margin-left: 15px; }
+section.informe-psicologico form#informe-edit .note-info {
+  margin-left: 25px; }
+section.informe-psicologico form#informe-edit .btn-outline {
+  margin-left: 5px; }
+section.informe-psicologico #pdf-format,
+section.informe-psicologico #word-format {
+  margin: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80px; }
+  section.informe-psicologico #pdf-format i,
+  section.informe-psicologico #word-format i {
+    line-height: 1em;
+    margin-bottom: 5px; }
+section.informe-psicologico #pdf-format {
+  width: 85px; }
+
+/** =====================================
+        P├üG. BUSCADOR DX
+===================================== **/
+section.buscador-dx .portlet {
+  padding-bottom: 35px; }
+  section.buscador-dx .portlet .portlet-body {
+    height: 340px;
+    overflow-y: auto; }
+section.buscador-dx .search-container ul li a {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-top: 5px; }
+
+/** =====================================
+        QUICK NOTES
+===================================== **/
+.wrapper-quick-note {
+  position: fixed;
+  z-index: 10103;
+  top: 90px;
+  right: 10px;
+  pointer-events: auto;
+  /* Editor */ }
+  .wrapper-quick-note #note-trigger {
+    display: block;
+    pointer-events: auto;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10104;
+    /*Para no se opacado por notes */
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.26); }
+  .wrapper-quick-note #notes-fixed {
+    position: relative;
+    z-index: 10103;
+    padding: 65px 0 0;
+    width: 350px;
+    text-align: left; }
+    .wrapper-quick-note #notes-fixed .portlet {
+      padding-bottom: 25px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.26); }
+    .wrapper-quick-note #notes-fixed .portlet-body {
+      height: 70vh;
+      overflow-y: auto; }
+    .wrapper-quick-note #notes-fixed .note {
+      padding: 10px !important;
+      margin-bottom: 10px !important; }
+  .wrapper-quick-note .others-notes .note {
+    line-height: 1.35; }
+    .wrapper-quick-note .others-notes .note > span {
+      display: inline-block;
+      width: 176px;
+      padding-left: 24px;
+      position: relative;
+      font-size: 11.5px; }
+      .wrapper-quick-note .others-notes .note > span > i {
+        position: absolute;
+        left: -1px;
+        top: 6px; }
+  .wrapper-quick-note ul.wysihtml5-toolbar li {
+    margin-bottom: 5px; }
+    .wrapper-quick-note ul.wysihtml5-toolbar li a {
+      font-size: 11px !important;
+      padding: 5px 8px !important; }
+
+/** =====================================
+          PERSONAS ATENDIDAS
+===================================== **/
+#filters #reportrange {
+  width: 100%; }
+
+/** =====================================
+          PERFIL DE USUARIO
+===================================== **/
+section#perfil-usuario .profile-usertitle-name {
+  font-weight: 500; }
+section#perfil-usuario .profile-usertitle-job {
+  font-weight: 400;
+  color: #aeb2c4; }
+
+.profile-content .portlet.light > .portlet-title > .nav-tabs > li > a {
+  font-weight: 500; }
+
+/*# sourceMappingURL=custom-haru.css.map */
